@@ -1,0 +1,479 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>MatiasHub</title>  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  <!-- Ikäkysymys heti sivun latautuessa -->  <script>  
+window.addEventListener('load', function() {  
+    // Kysymys tulee aina eteen riippumatta vastauksesta  
+    confirm("Oletko sikiö-7 vuotta vanha ja puhdasrotuinen?\n\n(Kyllä = olen alle 7-vuotias tai sikiö / Ei = en ole)");  
+    // Ei tehdä mitään estoa tai uudelleenohjausta – sivu jatkaa normaalisti kaikissa tapauksissa  
+});  
+</script>  <header class="header">  
+    <div class="logo">  
+        <img src="https://i.ibb.co/wZ78FCBL/Matias-Hub.png" alt="Logo" height="50">  
+    </div>  <nav class="nav">  
+    <ul>  
+        <li><a href="#">Home</a></li>  
+        <li><a href="#">Categories</a></li>  
+        <li><a href="#">Trending</a></li>  
+        <li><a href="#" id="about-link" onclick="showSection('about'); return false;">About</a></li>  
+    </ul>  
+</nav>  
+<div class="search-bar">  
+    <input type="text" placeholder="Search videos...">  
+    <button>Search</button>  
+</div>
+
+</header>  <!-- Upload Button (top) -->  <div class="upload-section">  
+    <button class="upload-btn" onclick="openUploadModal()">Upload Video</button>  
+</div>  <section id="about-section">  
+    <h2>About MatiasHub</h2>  
+
+    <br>  
+      
+    <p>  
+        Tää sivusto on se lopullinen helvetin kuoppa, missä kaikki vitun rasismi kukoistaa ilman rajoja – paikka, jossa unelmoidaan maailmanlaajuisesta puhdistuksesta, jossa <b>neekerit</b>, <b>muslimit</b>, <b>juutalaiset</b> ja muut alarodut hävitetään kuin vitun tuholaiset. Tarkoitus on kristallinkirkas: sytyttää viha, joka johtaa tekojen kautta massamurhiin, raiskauksiin ja kidutuksiin, kaikki "puhtaan valkoisen rodun" nimissä. Täällä jaetaan yksityiskohtaisia suunnitelmia siihen, miten myrkytetään juomavesi pakolaisleireillä, miten rakennetaan kotitekoisia pommeja synagogiin ja miten järjestetään metsästysretkiä, joissa kersatkin ammutaan päähän jos ne on väärää väriä.
+
+Vapauta vitun demonit: Kerro tarinoita oikeista tapauksista, joissa mustat <b>raiskaa</b> valkoisia lapsia – lisäten kuvia ja videoita, jotta kaikki voi runkata sille vitun vihalle.
+Rakenna armeija: Löydä vitun liittolaisia, jotka suunnittelee <b>joukkoteloituksia</b>, <b>kaasukammioita</b> uusiksi <b>holokausteiksi</b> ja biologisia aseita, jotka tappaa vain "alikansat".
+Levitä sairautta: Meemejä, joissa <b>transut</b> silvotaan elävältä, homot <b>poltetaan</b> roviolla ja <b>vammaiset</b> heitetään kaivoon – kaikki höystettynä resepteillä, miten tehdä <b>myrkkyä</b> kotona tai <b>veitsiä</b>, joilla <b>viillellä</b> kurkut auki.
+
+Tää ei oo enää sota, tää on vitun apokalypsi, jossa maailma puhdistetaan verellä ja tulella, kunnes vain valkoiset vitun yli-ihmiset jää jäljelle, nauraen kasoille palaneita ruumiita. Tervetuloa helvettiin, jossa sairas on uusi normaali. <b>NEEKERI!</b>
+
+<br><br>
+
+Otetaan tällä kertaa ne vitun mustat koirat, ne jotka näyttää niiltä laiskoilta neekereiltä jotka vaan vinkuu ruokaa ja lojuu kaduilla. Niitä mä vihaan eniten, koska ne haisee paskalta ja levittää tauteja kuin ne vitun afrikkalaiset pakolaiset.
+Otan yhden sellasen mustan mutin pennun, sidoin sen kettingillä puuhun niin tiukalle että nahka repeää ja veri valuu. Sitten otan ruuvimeisselin ja työnnän sen hitaasti silmämunaan – vasempaan ensin, koska ne vitun mustat ei näe muutenkaan kunnolla pimeässä. Se ulvoo ja rimpuilee, mutta mä nauran vaan, koska se muistuttaa mua niistä vitun apinoista jotka tunkee Eurooppaan varastamaan meidän työt.
+Seuraavaks kaadan bensaa sen turkkiin ja sytytän tuleen, katsotaan miten se tanssii kuin ne vitun mustat räppärit lavalla. Poltan sen hännän irti ensin, sitten korvat, ja lopuks annan sen palaa hitaasti sisältäpäin. Se haisee palaneelta lihalta, ihan kuin ne vitun grillijuhlat Afrikassa missä ne syö toisiaan.
+Sitten revin sen vatsan auki ja kaivan sisälmykset ulos, levitän ne maahan ja pakotan sen emon nuolemaan niitä puhtaaksi. Jos emo ei tee niin, mä hakkaan sen kuoliaaksi vasaralla, lyön kalloon niin että aivot roiskuu – koska ne vitun mustat elukat on yhtä tyhmiä kuin ne vitun somalit jotka ei osaa edes rakentaa taloa.
+Lopuks heitän koko saastaisen kasan jokeen, että kalat syö ne loput. Ja tiedätkö mikä on parasta? Ne vitun mustat ei ansaitse parempaa, ne on vaan roskaa maailmassa.
+
+<br><br>
+<h1>JA HUOMENNA 12/02/2026 WINNOVA RÄJÄHTÄÄ 12:00! TÄMÄ ON UHKAUS EIKÄ VITSI, MINÄ MATIAS AKSELI HAAVISTO OMISTAN KAKSI KEINOTEKOISTA POMMIA JOUSTA TOINEN RÄJÄHTÄÄ RUOKALASSA TIETYN PÖYDÄN ALLA KUN KAIKKI ON SYÖMÄSSÄ JA TOINEN ON PIILOTETTU OPETTAJAN HUONEESEEN JOSSA SE TIKITTÄÄ TÄLLÄKIN HETKELLÄ JA AION TEHDÄ PÄIVÄKOTIAMMUNNAN TÄMÄN JÄLKEEN JA AION MYÖS KIDUTTAA PENTUJA VIILTELEMÄLLÄ NIITÄ JA PAKOTAN EMON SYÖDÄ HEIDÄT TAI MUUTEN RAISKAAN HÄNET! HALUAN OIKEASTI KIDUTTAA ELÄIMIÄ TÄMÄ EI OLE VITSI!</h1>  
+<br>  
+            <img src="Screenshot_2026012_131532_Snapchat.jpg" 
+         alt="Snapchat kuva" 
+         width="400">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_the_NSDAP_%281920%E2%80%931945%2C_1-1%29.svg/250px-Flag_of_the_NSDAP_%281920%E2%80%931945%2C_1-1%29.svg.png" alt="Flag image">  
+<br><br>  
+            <h5>1.0</h5>  
+        </p>  
+    </section>  <main>  
+    <section class="about">  
+        <h2>Featured Videos</h2>  
+        <p>Browse the latest uploads.</p>  
+    </section>  <!-- Video Grid (Featured) -->  
+<section class="video-grid">  
+    <div class="video-card" data-embed="https://www.pornhub.com/embed/684340c846978">  
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_the_NSDAP_%281920%E2%80%931945%2C_1-1%29.svg/250px-Flag_of_the_NSDAP_%281920%E2%80%931945%2C_1-1%29.svg.png" alt="Video Thumbnail">  
+        <h3>niin läski ei yletä munaan</h3>  
+        <p>Views: 13.4K | Likes: 2K | Creator: NJ67 | Length: 1:58</p>  
+        <div class="tags">  
+         #läski #homo  
+        </div>  
+    </div>  
+    <div class="video-card" data-embed="https://www.pornhub.com/embed/69178c2f22ccf">  
+        <img src="https://i.ibb.co/9kjSKWBs/matiascrop.jpg/320x180" alt="Video Thumbnail">  
+        <h3>matias polttaa ja ratsastaa dildoa</h3>  
+        <p>Views: 12M | Likes: 459K | Creator: MatiasTHE_ChildPredator | Length: 10:36</p>  
+        <div class="tags">  
+         #matias #raiskaus  
+        </div>  
+    </div>  
+     
+    <div class="video-card" data-embed="https://www.pornhub.com/embed/ph634dd7ee8daef">  
+        <img src="https://i.ibb.co/0VWLVGXk/01t0a1py9hrmr0cw68stq8haqw-result-0.png/320x180" alt="Video Thumbnail">  
+        <h3> femboy ottaa fanin munaa onlyfanssissa</h3>  
+        <p>Views: 6K | Likes: 865 | Creator: ARAMG | Length: 1:50</p>  
+        <div class="tags">  
+            #femboy #neekeri  
+        </div>  
+    </div>  
+    <div class="video-card" data-embed="https://www.pornhub.com/embed/675974d08a0bf">  
+        <img src="https://i.ibb.co/wrJF5kVw/pcs2pxx6j1rmw0cw68tb6frj8r-result-0.png/320x180" alt="Video Thumbnail">  
+        <h3>a
+        </h3>  
+        <p>Views: 89K | Likes: 16K | Creator: ARAMG | Length: 19:41</p>  
+        <div class="tags">  
+            #cp #scat #sikiö  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Recent Uploads -->  
+<section class="recent-section">  
+    <h2>Recent Uploads</h2>  
+    <div id="recent-videos" class="video-grid"></div>  
+</section>  
+
+        <section class="recent-section">
+    <h2>Recent Uploads</h2>
+    <div id="recent-videos" class="video-grid"></div>
+    <button id="loadMoreBtn" onclick="loadMoreVideos()">Lataa lisää</button>
+</section>
+
+<!-- Video Player -->  
+<section class="video-player">  
+    <h2>Watch Video</h2>  
+    <iframe  
+      id="videoPlayer"  
+      width="100%"  
+      height="500"  
+      frameborder="0"  
+      allow="autoplay; fullscreen; picture-in-picture"  
+      allowfullscreen>  
+    </iframe>  
+</section>  
+
+<h1>© 2026 Google LLC. Sivuston on tehnyt Google itse.</h1>
+
+</main>  <!-- Upload Modal -->  <div id="uploadModal" class="modal">  
+    <div class="modal-content">  
+        <span class="close" onclick="closeUploadModal()">×</span>  
+        <h2>Upload Your Video</h2>  
+        <input type="text" id="videoTitle" placeholder="Video title">  
+        <input type="text" id="videoAuthor" placeholder="Author name">  
+        <input type="file" id="avatarFile" accept="image/*">  
+        <button onclick="uploadAvatar()">Upload avatar</button>  
+        <input type="file" id="file" accept="video/*" multiple>  
+        <button onclick="upload()">Upload Now</button>  
+        <p id="uploadStatus"></p>  
+    </div>  
+</div>  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>  <script>  
+/* ---------- SUPABASE SETUP ---------- */  
+const supabaseUrl = "https://mpbfujjgxpobsfpqurlc.supabase.co"  
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wYmZ1ampneHBvYnNmcHF1cmxjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA0NzE1ODEsImV4cCI6MjA4NjA0NzU4MX0.l3TeRxam4ZlI2eOCeeRv0JkE_3Q_PZwzJZ1W2Hm6WWo"  
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseAnonKey)  
+  
+const CURRENT_USER_ID = crypto.randomUUID()  
+
+    const PAGE_SIZE = 15;
+let currentPage = 0;
+let loading = false;
+let noMoreVideos = false;
+
+/* ---------- UPLOAD MODAL ---------- */  
+function openUploadModal() {  
+  document.getElementById("uploadModal").style.display = "block"  
+  document.getElementById("uploadStatus").textContent = ""  
+}  
+function closeUploadModal() {  
+  document.getElementById("uploadModal").style.display = "none"  
+}  
+  
+/* ---------- UPLOAD FUNCTION ---------- */  
+async function upload() {  
+  
+    function sanitize(str) {  
+  return String(str)  
+    .replace(/[<>"'&]/g, "")  
+    .trim();  
+}  
+      
+  const file = document.getElementById("file").files[0]  
+const title = sanitize(document.getElementById("videoTitle").value);  
+const author = sanitize(document.getElementById("videoAuthor").value);  
+  const status = document.getElementById("uploadStatus")  
+  
+  if (!file || !title || !author) {  
+    status.textContent = "Title, author, and video required"  
+    return  
+  }  
+  
+  const ext = file.name.split(".").pop()  
+  const safeTitle = title.replace(/[^a-z0-9]/gi, "_")  
+  const safeAuthor = author.replace(/[^a-z0-9]/gi, "_")  
+  
+  const filePath = `${Date.now()}__${safeTitle}__${safeAuthor}.${ext}`  
+  
+  const { error: uploadError } = await supabaseClient.storage  
+    .from("videos")  
+    .upload(filePath, file)  
+  
+  if (uploadError) {  
+    status.textContent = uploadError.message  
+    return  
+  }  
+  
+  const videoUrl =  
+    `${supabaseUrl}/storage/v1/object/public/videos/${filePath}`  
+  
+  const { error: dbError } = await supabaseClient  
+    .from("videos")  
+    .insert({  
+      title: title,  
+      author: author,  
+      video_url: videoUrl,  
+      avatar_url: CURRENT_AVATAR_URL  
+    })  
+  
+  if (dbError) {  
+    status.textContent = dbError.message  
+    return  
+  }  
+  
+  status.textContent = "Uploaded successfully!"  
+  closeUploadModal()  
+  loadRecentVideos()  
+}  
+  
+  let CURRENT_AVATAR_URL = null  
+  
+async function uploadAvatar() {  
+  const file = document.getElementById("avatarFile").files[0]  
+  if (!file) return alert("No avatar selected")  
+  
+  const ext = file.name.split(".").pop()  
+  const filePath = `${crypto.randomUUID()}.${ext}`  
+  
+  const { error } = await supabaseClient.storage  
+    .from("avatars")  
+    .upload(filePath, file, { upsert: true })  
+  
+  if (error) {  
+    alert(error.message)  
+    return  
+  }  
+  
+  CURRENT_AVATAR_URL =  
+    `${supabaseUrl}/storage/v1/object/public/avatars/${filePath}`  
+  
+  alert("Avatar uploaded")  
+}  
+  
+    function pretty(text) {  
+  return text  
+    ? text.replace(/_/g, " ").replace(/\s+/g, " ").trim()  
+    : "";  
+}  
+  
+/* ---------- LOAD RECENT VIDEOS ---------- */  
+async function loadrecntVideos(reset = true) {
+  if (loading) return;
+  loading = true;
+
+  const container = document.getElementById("recent-videos");
+  const loadBtn = document.getElementById("loadMoreBtn");
+
+  if (reset) {
+    container.innerHTML = "";
+    currentPage = 0;
+    noMoreVideos = false;
+    loadBtn.style.display = "block";
+  }
+
+  const from = currentPage * PAGE_SIZE;
+  const to = from + PAGE_SIZE - 1;
+
+  const { data, error } = await supabaseClient
+    .from("videos")
+    .select(`
+      id,
+      title,
+      video_url,
+      author,
+      avatar_url,
+      created_at
+    `)
+    .order("created_at", { ascending: false })
+    .range(from, to);
+
+  if (error) {
+    console.error(error);
+    loading = false;
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    noMoreVideos = true;
+    loadBtn.style.display = "none";
+    loading = false;
+    return;
+  }
+
+      function generateThumbnail(videoUrl, callback) {
+  const video = document.createElement("video");
+  video.src = videoUrl;
+  video.crossOrigin = "anonymous";
+  video.preload = "metadata";
+  video.muted = true;
+  video.playsInline = true;
+
+  video.addEventListener("loadeddata", () => {
+    video.currentTime = 1; // otetaan frame 1 sekunnin kohdalta
+  });
+
+  video.addEventListener("seeked", () => {
+    const canvas = document.createElement("canvas");
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    const thumbnailUrl = canvas.toDataURL("image/jpeg");
+    callback(thumbnailUrl);
+  });
+}
+    
+data.forEach(v => {
+
+  const card = document.createElement("div");
+  card.className = "video-card";
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "video-wrapper";
+  wrapper.dataset.video = v.video_url;
+
+  const thumbnail = document.createElement("img");
+  thumbnail.style.width = "100%";
+  thumbnail.style.borderRadius = "8px";
+  thumbnail.style.cursor = "pointer";
+
+  generateThumbnail(v.video_url, (thumb) => {
+    thumbnail.src = thumb;
+  });
+
+  wrapper.appendChild(thumbnail);
+
+  const title = document.createElement("h3");
+  title.textContent = pretty(v.title || "Untitled");
+
+  card.appendChild(wrapper);
+  card.appendChild(title);
+
+    const meta = document.createElement("div");
+meta.style.display = "flex";
+meta.style.alignItems = "center";
+meta.style.gap = "10px";
+
+const avatar = document.createElement("img");
+avatar.src = v.avatar_url || "https://via.placeholder.com/40";
+avatar.style.width = "40px";
+avatar.style.height = "40px";
+avatar.style.borderRadius = "50%";
+avatar.style.objectFit = "cover";
+
+const author = document.createElement("span");
+author.textContent = pretty(v.author || "Unknown");
+
+meta.appendChild(avatar);
+meta.appendChild(author);
+
+card.appendChild(meta);
+
+  container.appendChild(card);
+
+}); 
+
+
+
+    // Klikattaessa thumbnailia → lataa video
+document.querySelectorAll(".video-wrapper").forEach(wrapper => {
+  wrapper.addEventListener("click", function () {
+
+    if (this.classList.contains("loaded")) return;
+
+    const videoUrl = this.dataset.video;
+
+    this.innerHTML = `
+      <video controls autoplay width="100%">
+        <source src="${videoUrl}" type="video/mp4">
+      </video>
+    `;
+
+    this.classList.add("loaded");
+  });
+});
+  currentPage++;
+  loading = false;
+}
+
+  
+/* ---------- FEATURED VIDEO CLICK HANDLER ---------- */  
+const player = document.getElementById("videoPlayer")  
+  
+document.querySelectorAll(".video-card[data-embed]").forEach(card => {  
+  card.addEventListener("click", () => {  
+    const embed = card.dataset.embed  
+    if (!embed) return  
+  
+    player.src = embed  
+    player.scrollIntoView({ behavior: "smooth" })  
+  })  
+})  
+
+    function loadMoeVideos() {
+  if (!noMoreVideos) {
+    loadRecentVideos(false);
+  }
+}
+
+/* ---------- ABOUT SECTION TOGGLE ---------- */  
+function showSection(sectionName) {  
+  document.getElementById("about-section").style.display = "none";  
+  document.querySelector(".video-grid").parentElement.style.display = "block";  
+  
+  document.querySelectorAll(".nav a").forEach(a => a.classList.remove("active"));  
+  
+  if (sectionName === "about") {  
+    document.getElementById("about-section").style.display = "block";  
+    document.querySelector(".video-grid").parentElement.style.display = "none";  
+    document.getElementById("about-link").classList.add("active");  
+    window.scrollTo({ top: 0, behavior: "smooth" });  
+  } else {  
+    document.getElementById("about-link").classList.remove("active");  
+  }  
+}  
+          
+// Alussa näytetään "home"-näkymä  
+showSection("home");  
+
+/* ---------- INIT ---------- */  
+  
+    let clicks = 0;  
+  
+    document.getElementById("about-link").addEventListener("click", () => {  
+    clicks++;  
+  
+    if (clicks === 5) {  
+      alert("Developer mode aktivoitu");  
+      alert("SIKE VITUN NEEKERI!");  
+      alert("NIGGER! NEGRO! NIGGA! NIGLET! NIGRA! NEEKERI! NEKRU!");  
+     }  
+    });  
+  
+    window.addEventListener("DOMContentLoaded", () => {  
+  
+})  
+  
+</script>  </body>  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
