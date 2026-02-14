@@ -251,7 +251,7 @@ async function uploadAvatar() {
 }  
   
 /* ---------- LOAD RECENT VIDEOS ---------- */  
-async function loadrecntVideos(reset = true) {
+async function loadrecentVideos(reset = true) {
   if (loading) return;
   loading = true;
 
@@ -406,7 +406,7 @@ document.querySelectorAll(".video-card[data-embed]").forEach(card => {
   })  
 })  
 
-    function loadMoeVideos() {
+    function loadMoreVideos() {
   if (!noMoreVideos) {
     loadRecentVideos(false);
   }
@@ -452,28 +452,3 @@ showSection("home");
   
 </script>  </body>  
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
